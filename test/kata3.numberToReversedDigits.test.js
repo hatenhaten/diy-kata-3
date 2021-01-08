@@ -5,4 +5,4 @@ describe("numberToReversedDigits", () => {
     expect(numberToReversedDigits(123)).toEqual([3, 2, 1]);
     expect(numberToReversedDigits(4757586)).toEqual([6, 8, 5, 7, 5, 7, 4]);
   });
-});bch
+});
