@@ -9,7 +9,7 @@ const joinNames = (namesObj) => {
         } else if (i == namesObj.length - 2){
         listString += ' & ';
         }
-    }
+    };
 
     return listString;
 };
