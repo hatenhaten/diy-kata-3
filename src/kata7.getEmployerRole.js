@@ -1,9 +1,7 @@
 const getEmployerRole = (employeeName, employees) => {
-    for (let i = 0; i < employees.length; i++) {
-        if (employees[i].name == employeeName) {
-            return employees[i].role;
-        }
-    };
+    // find the item in the array with 
+    const employeeObj = employees.find(x => x.name === employeeName);
+    return employeeObj.role;
 };
 
 module.exports = getEmployerRole;

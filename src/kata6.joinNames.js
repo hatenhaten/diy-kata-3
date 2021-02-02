@@ -1,17 +1,9 @@
 const joinNames = (namesObj) => {
-    let listString = ''
-
-    for (let i=0; i<namesObj.length; i++) {
-        listString += namesObj[i].name;
-
-        if (i < namesObj.length - 2) {
-        listString += ', ';
-        } else if (i == namesObj.length - 2){
-        listString += ' & ';
-        }
-    };
-
-    return listString;
+    const namesArr = namesObj.map(x => x.name);
+    const firstItem = namesArr.shift();
+    const lastItem = namesArr.pop();
+    const listString = namesArr.join(', ');
+    return firstItem + ', ' + listString + ' & ' + lastItem;
 };
 
 module.exports = joinNames;

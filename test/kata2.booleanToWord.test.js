@@ -1,8 +1,5 @@
 const { booleanToWord } = require("../src");
 
-// returns Yes when passed true
-// returns No when passed false
-
 describe("booleanToWord", () => {
   test("returns yes when passed boolean true", () => {
     expect(booleanToWord(true)).toEqual('yes');
